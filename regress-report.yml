@@ -19,78 +19,78 @@ test-cases:
 bugreports:
  - summary: |
       Ошибка 500 при оформлении заказа
- environment: |
+   environment: |
       Google Chrome	Версия 118.0.5993.118 (Официальная сборка), (64 бит)
       ОС Windows 10 64 бит
- steps-to-reproduce: |
+   steps-to-reproduce: |
       1. Добавить товар в корзину
       2. Перейти в корзину
       3. Нажать кнопку "оформить заказ"
- expected-result: |
+   expected-result: |
       Создание заказа и отправка данных на сервер
- actual-result: |
+   actual-result: |
       Devtools выдает: Ошибка 500 Internal Server Error
 
  - summary: |
       Кнопки в "корзину" разного размера в карточках товаров
- environment: |
+   environment: |
       Google Chrome	Версия 118.0.5993.118 (Официальная сборка), (64 бит)
       ОС Windows 10 64 бит
- steps-to-reproduce: |
+   steps-to-reproduce: |
       1. Открыть сайт магазина
- expected-result: |
+   expected-result: |
       Кнопки "В корзину" имеют одинаковый размер
- actual-result: |
+   actual-result: |
       Кнопки "В корзину" имеют разные размеры на различных товарах
 
  - summary: |
       Фильтр по цене не учитывает цену со скидкой
- environment: |
+   environment: |
       Google Chrome	Версия 118.0.5993.118 (Официальная сборка), (64 бит)
       ОС Windows 10 64 бит
- steps-to-reproduce: |
+   steps-to-reproduce: |
       1. Открыть сайт магазина
       2. Ввести значения в поле  "Цена" от 100 до 1000
- expected-result: |
+   expected-result: |
       В результате выводятся товары с учетом скидки
- actual-result: |
+   actual-result: |
       В результатах отсутствуют товары, которые попадают в выбранный ценовой диапазон с учетом скидки
  - summary: |
       Слияние ценников на карточках товаров
- environment: |
+   environment: |
       Google Chrome	Версия 118.0.5993.118 (Официальная сборка), (64 бит)
       ОС Windows 10 64 бит
- steps-to-reproduce: |
+   steps-to-reproduce: |
       Открыть сайт магазина
- expected-result: |
+   expected-result: |
       Ценники на товарах с учетом скидки и без отображаются раздельно
- actual-result: |
+   actual-result: |
       Ценники ничем не разделяются и сливаются в один
 
  - summary: |
       При фильтрации товара по бренду данные выходят за пределы отображения карточки товара
- environment: |
+   environment: |
       Google Chrome	Версия 118.0.5993.118 (Официальная сборка), (64 бит)
       ОС Windows 10 64 бит
- steps-to-reproduce: |
+   steps-to-reproduce: |
       1. Открыть сайт магазина
       2. Выбрать бренд товара "Oppo"
- expected-result: |
+   expected-result: |
       Товар отображается корректно
- actual-result: |
+   actual-result: |
       Данные выходят за пределы отображения карточки товара
 
  - summary: |
       Неккоректное отображение кнопки "удалить"
- environment: |
+   environment: |
       Google Chrome	Версия 118.0.5993.118 (Официальная сборка), (64 бит)
       ОС Windows 10 64 бит
- steps-to-reproduce: |
+   steps-to-reproduce: |
       1. Открыть сайт магазина
       2. Добавить товары в корзину
       3. Перейти в корзину
- expected-result: |
+   expected-result: |
       Кнопка удалить для всех товаров находится на одной линии
- actual-result: |
+   actual-result: |
       В корзине кнопки "удалить" находятся на разных линиях
 
